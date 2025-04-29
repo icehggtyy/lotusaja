@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+@source "../views";
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --theme: "light", "dark";
+}
+@media (max-width: 885px) {
+    .mobiles {
+        display: none;
+    }
+    .monoas {
+        display: none;
+    }
+    .desktops {
+        display: none;
+    }
+    .mobilesss {
+        display: block;
+    }
+    .smhide {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .manag img {
+        width: 80%;
+    }
+    .header {
+        padding-top: 1.5rem;
+    }
+    .imagevisi {
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .text-san {
+        font-size: small;
+    }
+}
+.color1 {
+    background-color: #3674b5;
+}
+.colors1 {
+    color: #3674b5;
+}
+.color2 {
+    background-color: #578fca;
+}
+.colors2 {
+    color: #578fca;
+}
+.color3 {
+    background-color: #a1e3f9;
+}
+.coloras {
+    color: #a1e3f9;
+}
+.color4 {
+    background-color: #d1f8ef;
+}
+.colors4 {
+    color: #d1f8ef;
+}
+.gets:hover {
+    background-color: #1e40af !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15) !important;
+}
+.gets {
+    color: black !important;
+    background-color: #25d366 !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) m !important;
+}
+.lisa:hover {
+    background-color: #5294da !important;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+.header {
+    overflow: hidden !important;
+}
+.lisaa:hover {
+    color: white;
+    background-color: #3674b5;
+    transition: all;
+    transition-duration: 300ms;
+}
+.colors5 {
+    color: #2567f5;
+}
+.colors6 {
+    color: #04a7c4;
+}
+.colors7 {
+    color: #9264fc;
+}
+.sita1:hover {
+    background-color: #2567f5;
+    color: whitesmoke;
+}
+.sita2:hover {
+    background-color: #04a7c4;
+    color: whitesmoke;
+}
+.sita3:hover {
+    background-color: #9264fc;
+    color: whitesmoke;
+}
+.flo-hid {
+    overflow-x: hidden !important;
+}
+.imagevisi {
+    width: 90%;
+}
+.hoversan:hover {
+    border: solid 0.1em #3674b5;
+}
+.hoversan {
+    transition: border 0.2s ease;
+}
+.bordersan {
+    border: solid 0.1em #3674b5;
+}
+.hoverinaja {
+    background-color: #3674b5;
+    color: white;
+    transition: all;
+    transition-duration: 300ms;
+}
+.hoverinaja:hover {
+    background-color: white;
+    color: black;
+}
+.collapse-content {
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
