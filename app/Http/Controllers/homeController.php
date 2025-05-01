@@ -11,7 +11,7 @@ class homeController extends Controller
     public function index()
     {
         $portofolios = Portofolio::latest()->take(3)->get();
-        $posts = post::latest()->take(3)->get();
+        $posts = Post::latest()->take(3)->get();
         return view('welcome', compact('portofolios', 'posts'));
     }
 }
