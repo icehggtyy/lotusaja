@@ -47,8 +47,11 @@ class PortofolioResource extends Resource
                     ->imageEditor()
                     ->disk('public')
                     ->directory('porto')
-                    ->required()
-                    ->acceptedFileTypes(['image/webp']),
+                    ->acceptedFileTypes(['image/webp'])
+                    ->nullable(),
+                TextInput::make('link_img')
+                    ->url()
+                    ->suffixIcon('heroicon-m-globe-alt'),
                 TextInput::make('link')->required()->maxLength('300'),
                 RichEditor::make('description')->maxLength('3000')->required()->columnSpanFull()
             ]);

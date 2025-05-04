@@ -1,3 +1,6 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
 @import "tailwindcss";
 @plugin "daisyui";
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -102,25 +105,25 @@ body {
     transition-duration: 300ms;
 }
 .colors5 {
-    color: #2567f5;
+    color: #2567f5 !important;
 }
 .colors6 {
-    color: #04a7c4;
+    color: #04a7c4 !important;
 }
 .colors7 {
-    color: #9264fc;
+    color: #9264fc !important;
 }
 .sita1:hover {
     background-color: #2567f5;
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
 .sita2:hover {
     background-color: #04a7c4;
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
 .sita3:hover {
     background-color: #9264fc;
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
 .flo-hid {
     overflow-x: hidden !important;

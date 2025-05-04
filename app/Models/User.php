@@ -39,7 +39,7 @@ class User extends Authenticatable
     {
         return $this->avatar
             ? Storage::url($this->avatar)
-            : asset('storage/avatars/logoLotus3.png');
+            : asset('image/logoLotus3.png');
     }
     public function posts(): HasMany
     {

@@ -123,7 +123,7 @@
                                 <a href="{{ request()->fullUrlWithQuery(['author' => $post->author->name]) }}"
                                     class="flex items-center gap-2">
                                     <img loading="lazy"
-                                        src="{{ $post->author->avatar ? Storage::url($post->author->avatar) : Storage::url('avatars/logoLotus3.jpg') }}"
+                                        src="{{ $post->author->avatar ?? asset('image/logoLotus3.jpg') }}"
                                         alt="Author" class="w-8 h-8 rounded-full" />
                                     <div>
                                         <h4 class="font-medium">{{ $post->author->name }}</h4>

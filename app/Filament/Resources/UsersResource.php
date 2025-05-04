@@ -56,6 +56,9 @@ class UsersResource extends Resource
                     ->avatar()
                     ->nullable()
                     ->imageEditor(),
+                TextInput::make('link')
+                    ->url()
+                    ->suffixIcon('heroicon-m-globe-alt')
             ]);
     }
 

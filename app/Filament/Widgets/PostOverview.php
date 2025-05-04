@@ -2,7 +2,7 @@
 
 namespace App\Filament\Widgets;
 
-use App\Models\post;
+use App\Models\Post;
 use Filament\Widgets\ChartWidget;
 use Filament\Widgets\StatsOverviewWidget\Card;
 

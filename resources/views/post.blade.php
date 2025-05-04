@@ -20,7 +20,7 @@
                         <div class="flex items-center gap-3" itemscope itemtype="http://schema.org/Person">
                             <div class="avatar">
                                 <div class="w-12 h-12 rounded-full bordersan">
-                                    <img src="{{ $post->author->avatar ? Storage::url($post->author->avatar) : Storage::url('avatars/logoLotus3.jpg') }}"
+                                    <img src="{{ $post->author->avatar ?? asset('image/logoLotus3.jpg') }}"
                                         alt="{{ $post->author->name }}" loading="lazy" itemprop="image" />
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                 <div class="flex flex-col sm:flex-row gap-6">
                     <div class="avatar">
                         <div class="w-24 h-24 rounded-full bordersan">
-                            <img src="{{ $post->author->avatar ? Storage::url($post->author->avatar) : Storage::url('avatars/logoLotus3.jpg') }}"
+                            <img src="{{ $post->author->avatar ?? asset('image/logoLotus3.jpg') }}"
                                 alt="photo of{{ $post->author->name }}" loading="lazy" />
                         </div>
                     </div>

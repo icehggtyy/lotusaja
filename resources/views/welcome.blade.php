@@ -173,7 +173,7 @@
                     data-aos="fade-up" data-aos-duration="800" data-aos-delay="{{ $loop->index * 100 }}">
                     <!-- Card Image with Overlay -->
                     <figure class="relative overflow-hidden h-64">
-                        <img src="{{ asset('storage/' . $portofolio->image) }}"
+                        <img src="{{ $portofolio->link_img }}"
                             class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                             loading="lazy" alt="Photo of {{ $portofolio->title }}"
                             title="Photo Of {{ $portofolio->title }}" />

@@ -18,7 +18,7 @@
 
                 <!-- Card Image with Overlay -->
                 <figure class="relative overflow-hidden h-64">
-                    <img src="{{ asset('storage/' . $portofolio->image) }}"
+                    <img src="{{ $portofolio->link_img }}"
                         class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                         loading="lazy" alt="{{ $portofolio->title }}" title="{{ $portofolio->title }}" />
 
@@ -28,8 +28,8 @@
                         <div
                             class="flex gap-2 mb-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                             <button class="btn btn-circle btn-sm color1 open-lightbox"
-                                data-image="{{ asset('storage/' . $portofolio->image) }}"
-                                data-title="{{ $portofolio->title }}" title="View Full Image">
+                                data-image="{{ $portofolio->link_img }}" data-title="{{ $portofolio->title }}"
+                                title="View Full Image">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
                                     viewBox="0 0 24 24" stroke="white">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

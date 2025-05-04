@@ -17,7 +17,7 @@
                 <header>
                     <!-- Hero image with lazy loading and responsive sizing -->
                     <figure class="mb-6">
-                        <img src="{{ asset('storage/' . $porto->image) }}" alt="{{ $porto->title }}"
+                        <img src="{{ $porto->link_img }}" alt="{{ $porto->title }}"
                             class="w-full rounded-xl object-cover" loading="lazy" itemprop="image">
                     </figure>
                     <!-- Title with proper heading hierarchy -->
@@ -78,7 +78,7 @@
                         data-aos="fade-up" data-aos-duration="800" data-aos-delay="{{ $loop->index * 100 }}">
                         <!-- Card Image with Overlay -->
                         <figure class="relative overflow-hidden h-64">
-                            <img src="{{ asset('storage/' . $portofolio->image) }}"
+                            <img src="{{ $portofolio->link_img }}"
                                 class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                                 loading="lazy" alt="Photo of {{ $portofolio->title }}"
                                 title="Photo Of {{ $portofolio->title }}" />
@@ -113,12 +113,11 @@
             </div>
             <h1 class="text-base-content font-semibold text-center">Tidak ada project terkait</h1>
             @endforelse
-            <div class="view-more flex justify-center mt-4">
-                <a href="/portfolio" class="btn color1 text-white">View All Project</a>
-            </div>
         </section>
     </article>
-
+    <div class="view-more flex justify-center mt-2 mb-8" data-aos="fade-up" data-aos-duration="800">
+        <a href="/portfolio" class="btn color1 text-white">View All Project</a>
+    </div>
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
