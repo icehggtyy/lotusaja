@@ -1,4 +1,5 @@
-<x-layout webtitle="Lotusaja">
+<x-layout webtitle="Lotusaja"
+    description="Lotusaja adalah layanan joki coding profesional yang melayani pembuatan dan penyelesaian tugas pemrograman seperti tugas kuliah">
     <div class="w-full pt-12 bg-base-300 header md:pb-8">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex flex-col md:flex-row items-center gap-8">

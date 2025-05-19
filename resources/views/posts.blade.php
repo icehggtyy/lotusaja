@@ -1,4 +1,4 @@
-<x-layout webtitle="Lotusaja - Blogs" description="Kumpulan Artikel Lotusaja">
+<x-layout webtitle="Blogs" description="Kumpulan Artikel Lotusaja">
     <x-header main="Lotusaja Blog"></x-header>
     <div class="posts mt-6 mb-4 px-4">
         <div class="gabunganfilter grid grid-cols-1 lg:grid-cols-4 items-center lg:gap-2">

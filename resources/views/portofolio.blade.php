@@ -1,4 +1,4 @@
-<x-layout webtitle="Lotusaja - Portfolio" description="Kumpulan Portfolio Lotusaja">
+<x-layout webtitle="Portfolio" description="Kumpulan Portfolio Lotusaja">
     <x-header main="Lotusaja Portfolio"></x-header>
 
     <!-- Hero Portfolio Section -->

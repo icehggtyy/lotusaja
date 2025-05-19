@@ -38,7 +38,7 @@ class PostResource extends Resource
                     }),
                 TextInput::make('slug')->required()->disabled()->dehydrated(true),
                 Select::make('category_id')->required()->relationship('category', 'title')->searchable()->preload(),
-                RichEditor::make('description')->required()->maxLength(3000)->columnSpanFull(),
+                RichEditor::make('description')->required()->maxLength(10000)->columnSpanFull(),
                 TextInput::make('author_id')->required()->disabled()
                     ->default(fn() => auth()->id())->dehydrated(true), //id() is not error but if you see it error it beacuse the intelephense
             ]);

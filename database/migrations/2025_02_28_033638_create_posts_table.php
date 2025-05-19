@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title');
-            $table->string('description');
+            $table->mediumText('description');
             $table->string('slug');
             $table->foreignId('author_id')->constrained(
                 table: 'users',

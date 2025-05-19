@@ -1,4 +1,4 @@
-<x-layout webtitle="Lotusaja - Blogs: {{ $post->title }}" description="{{ Str::words($post->description, 15, '...') }}">
+<x-layout webtitle="{{ $post->title }}" description="{{ Str::words($post->description, 15, '...') }}">
     <x-header main="Lotusaja Post"></x-header>
     <article class="container mx-auto px-4 py-8 max-w-4xl">
         <div class="text-medium font-mono breadcrumbs mb-4">
@@ -45,8 +45,8 @@
                     </div>
                 </header>
                 <!-- Post description as article summary for SEO -->
-                <div class="mb-6">
-                    <p class="text-base leading-relaxed">{!! $post->description !!}</p>
+                <div class="mb-6 prose max-w-none dark:prose-invert text-justify">
+                    {!! $post->description !!}
                 </div>
                 <!-- Share buttons -->
                 <div class="flex flex-row items-center justify-between gap-4 border-t border-base-content/50 pt-6 mt-8">
@@ -97,7 +97,7 @@
             <h2 class="text-2xl font-bold mb-2">Rekomendasi Artikel</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 @forelse ($relatedPosts as $related)
-                    <div class="card bg-base-300 shadow-lg hoversan max-h-40">
+                    <div class="card bg-base-300 shadow-lg hoversan max-h-full">
                         <div class="card-body">
                             <a href="/posts/?category={{ $related->category->slug }}"
                                 class="text-base-content badge badge-{{ $related->category->color }}">

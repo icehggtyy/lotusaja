@@ -53,7 +53,7 @@ class PortofolioResource extends Resource
                     ->url()
                     ->suffixIcon('heroicon-m-globe-alt'),
                 TextInput::make('link')->required()->maxLength('300'),
-                RichEditor::make('description')->maxLength('3000')->required()->columnSpanFull()
+                RichEditor::make('description')->required()->columnSpanFull()
             ]);
     }
 

@@ -1,5 +1,5 @@
-<x-layout webtitle="Lotusaja - About"
-    description="Tentang Lotusaja - Solusi Digital Terpercaya di Indonesia sejak 2020. Kami menyediakan layanan pengembangan web, aplikasi mobile, dan digital marketing berkualitas tinggi.">
+<x-layout webtitle="About Us"
+    description="Solusi Digital Terpercaya di Indonesia sejak 2025. Kami menyediakan layanan pengembangan web, dan IT consultant berkualitas tinggi.">
     <x-header main="About Us"></x-header>
     <!-- Story Section with Schema.org markup -->
     <div class="mx-8 my-8" id="our-story">

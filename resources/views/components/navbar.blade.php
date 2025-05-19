@@ -7,7 +7,7 @@
             </svg>
         </button>
         <a href="https://lotusaja.com" class="font-2xl font-semibold text-white ml-2 hover:font-bold md:hidden"
-            title="Lotus">Lotus</a>
+            title="Lotus">Lotusaja</a>
         <!-- Logo -->
         <a href="https://lotusaja.com"
             class="flex flex-row items-center hover:text-blue-200 transition-colors hidden md:flex"
@@ -114,7 +114,7 @@
     <div class="p-3 flex justify-between items-center color1">
         <div class="flex items-center">
             <img src="{{ asset('image/logoLotus3.png') }}" alt="Lotus Logo" class="h-6">
-            <h2 class="text-lg font-bold ml-2 text-white">Lotus</h2>
+            <h2 class="text-lg font-bold ml-2 text-white">Lotusaja</h2>
         </div>
         <button id="close-menu" class="p-2 rounded-full lisa">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"

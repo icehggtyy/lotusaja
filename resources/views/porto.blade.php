@@ -1,5 +1,4 @@
-<x-layout webtitle="Lotusaja Portofolio: {{ $porto->title }}"
-    description="{{ Str::words($porto->description, 15, '...') }}">
+<x-layout webtitle="{{ $porto->title }}" description="{{ Str::words($porto->description, 15, '...') }}">
     <x-header main="Lotusaja Portfolio"></x-header>
     <article class="container mx-auto px-4 py-8 max-w-4xl" itemscope itemtype="http://schema.org/CreativeWork">
         <!-- Breadcrumbs with structured data -->
